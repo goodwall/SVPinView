@@ -397,7 +397,7 @@ extension SVPinView : UICollectionViewDataSource, UICollectionViewDelegate, UICo
             let totalCellWidth = height * CGFloat(pinLength)
             let totalSpacingWidth = interSpace * CGFloat(max(pinLength, 1) - 1)
             let inset = (collectionView.frame.size.width - CGFloat(totalCellWidth + CGFloat(totalSpacingWidth))) / 2
-            return UIEdgeInsets(top: top, left: inset, bottom: 0, right: inset)
+            return UIEdgeInsets(top: top, left: 0, bottom: 0, right: 0)
         }
         return UIEdgeInsets(top: top, left: 0, bottom: 0, right: 0)
     }
