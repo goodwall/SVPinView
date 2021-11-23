@@ -375,9 +375,10 @@ extension SVPinView : UICollectionViewDataSource, UICollectionViewDelegate, UICo
             let width = (collectionView.bounds.width - (interSpace * CGFloat(max(pinLength, 1) - 1)))/CGFloat(pinLength)
             return CGSize(width: width, height: collectionView.frame.height)
         }
-        let width = (collectionView.bounds.width - (interSpace * CGFloat(max(pinLength, 1) - 1)))/CGFloat(pinLength)
-        let height = collectionView.frame.height
-        return CGSize(width: min(width, height), height: min(width, height))
+        //let width = (collectionView.bounds.width - (interSpace * CGFloat(max(pinLength, 1) - 1)))/CGFloat(pinLength)
+        //let height = collectionView.frame.height
+        //return CGSize(width: min(width, height), height: min(width, height))
+        return CGSize(width: collectionView.frame.height, height: collectionView.frame.height)
     }
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
